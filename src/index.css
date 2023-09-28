@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.submenu a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.submenu a:hover {
+  background-color: #f1f1f1;
+}
+
+.navbar-items:hover .submenu {
+  display: block;
+}
+
+.submenu-right {
+  left: 100%;
+}
+
+.navbar-items-right:hover .submenu-right {
+  right: 100%;
+  left: auto;
+}
+
+.navbar {
+  padding: 0 0;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.navbar h1 {
+  color: #008080;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+.navbar button{
+  background: #008080;
+  color: #fff;
+  border: 0;
+  height: 100%;
+  padding: 30px;
+  margin-left: 8px;
+  cursor: pointer;
+  background-color: #008080;
+}
+
+/* CSS for appointment page */
+.appointment-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Close button style */
+.close-button {
+  position: absolute;
+  top: 30px;
+  right: 70px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #008080;
+}
+
+/* CSS for the calendar */
+
+.appointment-page {
+  display: flex; /* Use flexbox to create a horizontal layout */
+  flex-direction: column;
+  align-items: center; /* Vertically center the content */
+}
+
+.appointment-content {
+  display: flex;
+  justify-content: space-between;
+  width: 50%; /* Adjust the width as needed */
+  margin-top: 40px; /* Add top margin if desired */
+  align-items: center;
+}
+
+.appointment-calendar {
+  width: 300px; /* Adjust the width as needed */
+  flex: 1; /* Allow the calendar to take up as much space as needed */
+  margin-right: 20px; /* Add some spacing between the calendar and time slots */
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  align-items: center;
+}
+
+.appointment-time {
+  width: 200px;
+  flex: 1; /* Allow the time slots to take up as much space as needed */
+  align-items: center;
+  margin-left: 100px;
+}
+
+.time-columns {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.time-column {
+  flex: 1; 
+  padding: 0 10px; 
+  margin-right: 10px; 
+}
+
+.appointment-time h4 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.appointment-time ul {
+  list-style: none;
+  padding: 0;
+}
+
+.appointment-time li {
+  font-size: 14px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.appointment-time li:hover {
+  background-color: #008080; 
+}
+
+.appointment-page-next{
+  background: #008080;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.appointment-logo{
+  width: 50px;
+  height: 60px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+
+.banner-slide {
+  padding: 20px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  max-width: 80%;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.banner-slide img{
+  width: 400px;
+  height: 400px;
+  margin-left: 70px;
+  margin-right: 250px;
+  float: left;
+}
+
+.banner-slide button {
+  background: #008080;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.content-container{
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 50px;
+  transition: transform 0.5s ease;
+  transform: translateY(0);
+}
+
+.slide-up {
+  transform: translateY(30%);
+}
+
+.para1{
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #008080;
+}
+
+.para2{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.home h2{
+  text-align: center;
+}
+
+.navbar-items{
+  text-decoration: none;
+  color:black;
+}
+
+.navbar-items:hover{
+  color:#008080;
+}
+
+
+.menu {
+  cursor: pointer;
+  padding: 20px;
+  background-color: #008080;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: -25%;
+  width: 25%;
+  height: 100%;
+  background-color: #008080; 
+  transition: left 0.3s;
+  z-index: 2;
+  overflow-y: auto;
+}
+
+.menu-content {
+  color: white;
+  align-items: center;
+  padding: 20px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.navbar-items {
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.menu-open .menu-container {
+  left: 0;
+}
+
+.menu-open .menu {
+  transform: rotate(90deg);
+}
+
+.submenu {
+  background-color: #008080;
+  padding: 20px;
+  border-radius: 0 5px 5px 0;
+  font-weight: normal;
+}
+
+.submenu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+}
+
+.submenu a:hover {
+  background-color: #1c6680;
+  border-radius: 5px;
+}
